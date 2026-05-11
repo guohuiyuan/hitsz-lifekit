@@ -31,21 +31,32 @@ hitsz-lifekit/
 
 ## 安装 skill
 
-### 从 GitHub 安装
+### 使用 skills-installer 安装
 
-在 Codex 对话中输入：
+先安装 CLI：
+
+```bash
+npm install -g skills-installer
+```
+
+再安装本仓库中的 skill：
 
 ```text
-$skill-installer install the hitsz-campusqa skill from https://github.com/guohuiyuan/hitsz-lifekit/tree/main/skills/hitsz-campusqa
+skills-installer install https://github.com/guohuiyuan/hitsz-lifekit/tree/main/skills/hitsz-campusqa --client codex
+```
+
+如果安装后提示 `skills-installer: command not found`，可以直接用 `npx`：
+
+```bash
+npx skills-installer install https://github.com/guohuiyuan/hitsz-lifekit/tree/main/skills/hitsz-campusqa --client codex
 ```
 
 ### 本地复制安装
 
 在本仓库根目录运行：
 
-```powershell
-New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills\hitsz-campusqa"
-Copy-Item -Recurse -Force ".\skills\hitsz-campusqa\*" "$env:USERPROFILE\.codex\skills\hitsz-campusqa\"
+```bash
+skills-installer install ./skills/hitsz-campusqa --client codex --project
 ```
 
 复制后重启 Codex，或开启新的 Codex 会话。
