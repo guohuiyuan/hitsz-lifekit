@@ -63,13 +63,11 @@ skills-installer install ./skills/hitsz-campusqa --client codex --project
 
 ## 最简调用示例
 
-安装后，在 Codex 中直接问：
+安装后，在 Codex 中直接点名已安装的 skill：
 
 ```text
-帮我用 hitsz-campusqa 查询：校园卡丢了怎么办？请给出依据。
+使用已安装的 hitsz-campusqa skill 回答：校园卡丢了怎么办？请给出依据。
 ```
-
-Codex 会根据 `hitsz-campusqa` 的 `SKILL.md` 自行调用 skill。
 
 ## 注意事项
 
