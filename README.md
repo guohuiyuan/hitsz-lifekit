@@ -1,12 +1,18 @@
 ﻿# hitsz-lifekit
 
 `hitsz-lifekit` 是面向哈尔滨工业大学（深圳）学生的 Codex skills 仓库。
+也用于沉淀可复用的智能体项目。
 
 ## 仓库结构
 
 ```text
 hitsz-lifekit/
 ├── README.md
+├── agents/
+│   └── debate-agent/
+│       ├── README.md
+│       ├── main.py
+│       └── requirements.txt
 └── skills/
     └── hitsz-campusqa/
         ├── SKILL.md
@@ -19,7 +25,14 @@ hitsz-lifekit/
 - **Skill 目录**: `skills/<skill-name>/`
 - **Skill 入口**: `skills/<skill-name>/SKILL.md`
 - **脚本目录**: `skills/<skill-name>/scripts/`
+- **Agent 项目**: `agents/<agent-name>/`
 - **根目录**: 只放仓库级说明，不放单个 skill 的重复文档
+
+## 当前 agents
+
+| Agent | 入口 | 用途 |
+| --- | --- | --- |
+| `debate-agent` | `agents/debate-agent/README.md` | 基于 AgentScope 的多智能体辩论流程 |
 
 ## 当前 skills
 
